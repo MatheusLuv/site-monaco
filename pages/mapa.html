@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <title>Mônaco</title>
+    <link rel="stylesheet" href="../css/mapa.css">
+    <script src="../script.js"></script>
+    
+    
+</head>
+<body>
+
+    <header id="cabecalho">
+        <div class="container">
+
+            <nav id="menu">
+                
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/historia.html">Historia</a></li>
+                    <li><a href="../pages/eventos.html">Eventos</a></li>
+                    <li><a href="../pages/turismo.html">Turismo</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="../pages/fotos.html">Fotos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="slider">
+
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+    
+            <div class="slide first">
+                <img src="../imagens/banner/pexels-01.jpg" alt="imagem 1">
+            </div>
+            <div class="slide">
+                <img src="../imagens/banner/pexels-02.jpg" alt="imagem 2">
+            </div>
+            <div class="slide">
+                <img src="../imagens/banner/pexels-03.jpg" alt="imagem 3">
+            </div>  
+            <div class="slide">
+                <img src="../imagens/banner/pexels-04.jpg" alt="imagem 4">
+            </div>
+
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            
+        </div>
+            
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+
+    <div class="gallery">
+
+        <div class="titulo">
+            <h1>Região Grafica de Mônaco</h1>
+        </div>
+
+        <div class="image-conteiner">
+            <a href="../imagens/mapa/mc.jpg" class="image">
+                <img src="../imagens/mapa/mc.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="explore">
+        <a href="https://www.google.com.br/maps/@43.7393014,7.4204317,2265m/data=!3m1!1e3?entry=ttu" target="_blank">Explorar</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('.gallery').magnificPopup({
+                delegate:'a',
+                type:'image',
+                gallery:{
+                    enabled:true
+                }
+            });
+        });
+    </script>
+
+    <footer id="rodape"> 
+        <p>Site desenvolvido como projeto final da disciplina de Introdução à Tecnologia Web<br>
+            1º período do curso de Sistema de Informação - Semestre: 2023.1<br>
+            Centro Universitário do Rio São Francisco - UniRios / Paulo Afonso - BA<br>
+            Aluno(a): Matheus Menezes da Cruz - <a href="https:www.instagram.com/matheus_luv" target="_blank">@matheus_luv</a><p>
+        
+    </footer>
+    
+</body>
+</html>

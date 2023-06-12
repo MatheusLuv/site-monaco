@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <title>Mônaco</title>
+    <link rel="stylesheet" href="../css/fotos.css">
+    <script src="../script.js"></script>
+    
+    
+</head>
+<body>
+
+    <header id="cabecalho">
+        <div class="container">
+
+            <nav id="menu">
+                
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/historia.html">Historia</a></li>
+                    <li><a href="../pages/eventos.html">Eventos</a></li>
+                    <li><a href="../pages/turismo.html">Turismo</a></li>
+                    <li><a href="../pages/mapa.html">Map</a></li>
+                    <li><a href="#">Fotos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="slider">
+
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+    
+            <div class="slide first">
+                <img src="../imagens/banner/pexels-01.jpg" alt="imagem 1">
+            </div>
+            <div class="slide">
+                <img src="../imagens/banner/pexels-02.jpg" alt="imagem 2">
+            </div>
+            <div class="slide">
+                <img src="../imagens/banner/pexels-03.jpg" alt="imagem 3">
+            </div>  
+            <div class="slide">
+                <img src="../imagens/banner/pexels-04.jpg" alt="imagem 4">
+            </div>
+
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            
+        </div>
+            
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+
+    <div class="gallery">
+
+        <div class="titulo">
+            <h1>Fotos de Mônaco</h1>
+        </div>
+
+        <div class="image-conteiner">
+            <a href="../imagens/fotos/architecture-gade159b50_1280.jpg" class="image">
+                <img src="../imagens/fotos/architecture-gade159b50_1280.jpg" alt="">
+            </a>
+            <a href="../imagens/fotos/buildings-g737f790ab_1280.jpg" class="image">
+                <img src="../imagens/fotos/buildings-g737f790ab_1280.jpg" alt="">
+            </a>
+            <a href="../imagens/fotos/car-g9b738b339_1280.jpg" class="image">
+                <img src="../imagens/fotos/car-g9b738b339_1280.jpg" alt="">
+            </a>
+            <a href="../imagens/fotos/city-g5664e051f_1280.jpg" class="image">
+                <img src="../imagens/fotos/city-g5664e051f_1280.jpg" alt="">
+            </a>
+            <a href="../imagens/fotos/euro-g8597709a4_1280.jpg" class="image">
+                <img src="../imagens/fotos/euro-g8597709a4_1280.jpg" alt="">
+            </a>
+            <a href="../imagens/fotos/game-bank-g3039c8b3f_1280.jpg" class="image">
+                <img src="../imagens/fotos/game-bank-g3039c8b3f_1280.jpg" alt="">
+            </a>
+            <a href="../imagens/fotos/guard-g258e1a0e6_1280.jpg" class="image">
+                <img src="../imagens/fotos/guard-g258e1a0e6_1280.jpg" alt="">
+            </a>
+            <a href="../imagens/fotos/load-line-g05b27a392_1280.jpg" class="image">
+                <img src="../imagens/fotos/load-line-g05b27a392_1280.jpg" alt="">
+            </a>
+            <a href="../imagens/fotos/local-gc141837a0_1280.jpg" class="image">
+                <img src="../imagens/fotos/local-gc141837a0_1280.jpg" alt="">
+            </a>
+            <a href="../imagens/fotos/mediterranean-sea-ga4af661e3_1280.jpg" class="image">
+                <img src="../imagens/fotos/mediterranean-sea-ga4af661e3_1280.jpg" alt="">
+            </a>
+            <a href="../imagens/fotos/monaco-g2854878bd_1280.jpg" class="image">
+                <img src="../imagens/fotos/monaco-g2854878bd_1280.jpg" alt="">
+            </a>
+            <a href="../imagens/fotos/monaco-g7a2dfe37d_1280.jpg" class="image">
+                <img src="../imagens/fotos/monaco-g7a2dfe37d_1280.jpg" alt="">
+            </a>
+            <a href="../imagens/fotos/monaco-g8e481b729_1280.jpg" class="image">
+                <img src="../imagens/fotos/monaco-g8e481b729_1280.jpg" alt="">
+            </a>
+            <a href="../imagens/fotos/monaco-ga0c8417b4_1280.jpg" class="image">
+                <img src="../imagens/fotos/monaco-ga0c8417b4_1280.jpg" alt="">
+            </a>
+            
+            
+            
+            
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('.gallery').magnificPopup({
+                delegate:'a',
+                type:'image',
+                gallery:{
+                    enabled:true
+                }
+            });
+        });
+    </script>
+
+    <footer id="rodape"> 
+        <p>Site desenvolvido como projeto final da disciplina de Introdução à Tecnologia Web<br>
+            1º período do curso de Sistema de Informação - Semestre: 2023.1<br>
+            Centro Universitário do Rio São Francisco - UniRios / Paulo Afonso - BA<br>
+            Aluno(a): Matheus Menezes da Cruz - <a href="https:www.instagram.com/matheus_luv" target="_blank">@matheus_luv</a><p>
+        
+    </footer>
+    
+</body>
+</html>
